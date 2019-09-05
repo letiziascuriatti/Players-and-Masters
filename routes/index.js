@@ -15,7 +15,13 @@ router.get('/registration', function(req, res, next) {
 });
 
 router.post('/registration', passport.authenticate('local.signup', {
-
+    successRedirect:'/',
+    failureRedirect: '/registration'
 }));
+
+/*router.get('/', function(req,res, next){
+    res.render('user/login')
+})
+*/
 
 module.exports = router;

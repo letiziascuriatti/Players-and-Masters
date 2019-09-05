@@ -22,14 +22,14 @@ img#logo {
 
 #footer {
     background-color: black;
-    bottom: 0px;
+    bottom: 0;
     margin-bottom: 0px;
     left: 0;
     height: 70px;
     color: white;
     width: 100%;
     font-style: italic;
-    position: absolute;
+    position: fixed;
     font-size: 12px;
     flex-shrink: 0;
     text-align: center;

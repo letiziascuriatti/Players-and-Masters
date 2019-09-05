@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var schema = new Schema({
+var pgSchema = new Schema({
     nome_pg: { type: String, required: true },
     classe: { type: String, required: true },
     razza: { type: String, required: true },
@@ -13,8 +13,8 @@ var schema = new Schema({
     intelligenza: { type: Number, required: true },
     saggezza: { type: Number, required: true },
     carisma: { type: Number, required: true },
-    nome_utente: { type: String, required: true },
-    nome_party: { type: String }
+  //  nome_utente: { type: String, required: true },
+   // nome_party: { type: String }
 });
 
-module.exports = mongoose.model('Personaggi', schema);
+module.exports = mongoose.model('Personaggi', pgSchema);

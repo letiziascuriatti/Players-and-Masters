@@ -23,6 +23,7 @@ mongoose.connect('mongodb://localhost:27017/Playersandmasters', { useNewUrlParse
 }).catch((err) => {
     console.log("Not Connected to Database ERROR! ", err);
 });
+require('./config/passport');
 // view engine setupmongodb://localhost:27017/Playersandmasters'
 app.engine('.hbs', expressHbs({ defaultLayout: 'layout', extname: '.hbs' }));
 app.set('view engine', 'hbs');
